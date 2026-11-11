@@ -1,0 +1,13 @@
+[functions.wallet-low-balance-push]
+# Database Webhooks are authenticated by the dedicated shared secret header.
+verify_jwt = false
+
+[functions.classify-transaction]
+# The function also calls auth.getUser and rejects anonymous keys.
+verify_jwt = true
+
+[functions.smartwallet-ai]
+verify_jwt = true
+
+[functions.smartwallet-ml]
+verify_jwt = true

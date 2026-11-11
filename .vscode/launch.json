@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Chrome (extensions off)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "-d",
+        "chrome",
+        "--web-browser-flag=--disable-extensions",
+        "--web-browser-flag=--disable-background-timer-throttling"
+      ]
+    },
+    {
+      "name": "Web server (open URL manually)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["-d", "web-server", "--web-hostname=localhost", "--web-port=8080"]
+    },
+    {
+      "name": "Android device",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["-d", "R83Y401K4XK"]
+    }
+  ]
+}

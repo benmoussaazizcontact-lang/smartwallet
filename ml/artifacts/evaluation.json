@@ -1,0 +1,50 @@
+{
+  "status": "experimental",
+  "training_data": "synthetic",
+  "real_world_validated": false,
+  "real_user_records_used": false,
+  "user_id": "synthetic-household",
+  "disclaimer": "Holdout metrics were measured on synthetic data and are not real-world accuracy.",
+  "lightgbm_expense": {
+    "7": {
+      "mae": 204.4616275003733,
+      "rmse": 253.67473371601287,
+      "train_rows": 356,
+      "test_rows": 89
+    },
+    "15": {
+      "mae": 234.20070107656898,
+      "rmse": 305.11492945545564,
+      "train_rows": 350,
+      "test_rows": 87
+    },
+    "30": {
+      "mae": 259.1881758478642,
+      "rmse": 313.34437668342974,
+      "train_rows": 338,
+      "test_rows": 84
+    }
+  },
+  "xgboost_overrun": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1": 0.75,
+    "pr_auc": 0.6597222222222222,
+    "train_rows": 77,
+    "test_rows": 19
+  },
+  "isolation_forest": {
+    "test_rows": 137,
+    "flagged": 7,
+    "score_p95": -0.023994234201149295
+  },
+  "sarimax_cashflow": {
+    "mae_30": 150.90635189625397,
+    "mae_7": 245.42930253644272,
+    "holdout_days": 30
+  },
+  "versions": {
+    "lightgbm": "4.7.0",
+    "xgboost": "3.2.0"
+  }
+}

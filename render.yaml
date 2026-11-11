@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: smartwallet-ml
+    runtime: docker
+    dockerfilePath: ./ml/Dockerfile
+    dockerContext: ./ml
+    healthCheckPath: /health
+    plan: free
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
